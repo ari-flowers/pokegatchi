@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- Main JS -->
+  <script src="./main.js" charset="utf-8" defer></script>
+  <!-- Pseudo JS for testing -->
+  <!-- <script src="./pseudo.js" charset="utf-8" defer></script> -->
+  <title>Tamagotchi</title>
+</head>
+
+<body>
+  <!-- Tamagotchi info containing game title, tamagotchi name, and level -->
+  <div id="tamagotchi-info">
+    <h1 id="game-name">Poké-gotchi</h1>
+    <h2 id="player-name"></h2>
+    <h3 id="tamagotchi-level" class="hidden"></h2>
+      <br/>
+        <p></p>
+<!-- sprite container -->
+  <div id="sprite-container">
+    <div id="character"><img id="pokemon" src="https://i.imgur.com/dAHnQbL.gif" alt="bouncing white egg with green spots">
+    </div>
+  </div>
+
+<!-- user input for name with a submit button >> should instantiate the 'gotchi '-->
+  <div id="player-credentials">
+    <input type="text" id="tamagotchi-name" placeholder="Type a name...">
+    <button type="button" id="hatch">Hatch!</button>
+  </div>
+<!-- Stat counters for hunger, sleepiness, and boredom -->
+
+  <div id="control-wrapper" class="hidden">
+    <div id="stat-counters" class="hidden">
+      <ul id="stats">
+        <li id="hunger">0/10</li>
+        <li id="sleepiness">0/10</li>
+        <li id="boredom">0/10</li>
+      </ul>
+    </div>
+<!-- Game buttons for feed, lights, and play -->
+    <div id="game-buttons" class="hide-buttons">
+      <button type="button" id="feed">Feed</button>
+      <button type="button" id="lights">Lights</button>
+      <button type="button" id="play">Play</button>
+    </div>
+  </div>
+
+</body>
+</html>
+
+<!-- breeder gif for intro scene
+<img id="breeder" src="https://i.imgur.com/dzL2Dqv.gif"> -->

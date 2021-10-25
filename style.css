@@ -1,0 +1,107 @@
+/* Contain the game in a set box on the screen, rather than the whole page */
+/* Flex box and media queries to make it mobile friendly */
+@font-face {
+font-family: Pokemon;
+src:url('./PokemonGb.ttf');
+}
+
+* {
+  font-family: Pokemon;
+
+}
+body {
+  background: url(https://i.imgur.com/00zHDf9.jpg);
+  background-size: cover;
+  text-align: center;
+}
+p {
+  display: none;
+  color: blue;
+  padding: 15px;
+}
+
+#tamagotchi-info {
+  background-color:rgba(140, 140, 140, 0.7);
+  border: 7px solid black;
+  border-radius: 2%;
+  margin-top: 10em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  max-width: 400px;
+}
+input {
+  min-height: 20px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 4%;
+  font-size: 15px;
+}
+button {
+  cursor: pointer;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 10%;
+}
+ul {
+  padding-inline-start: 0px;
+}
+li {
+  font-size: 14px;
+  display: inline;
+  padding: 10px, 8px, 10px, 8px;
+}
+.changeColor {
+  color: red;
+}
+#sprite-container {
+  display: flex;
+  justify-content: center;
+}
+#character {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 40%;
+  min-height: 130px;
+}
+#control-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+#control-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 300px;
+  padding: 10px;
+  border: 7px solid transparent;
+  border-radius: 3%;
+}
+#stat-counter {
+  justify-content: center;
+}
+#game-buttons {
+  justify-content: center;
+}
+#pokemon {
+  position: absolute;
+  justify-content: center;
+  width: 80%;
+}
+.toggle-animation {
+  animation: 7s linear infinite slidein;
+}
+.hidden {
+  display: none;
+}
+.hide-buttons {
+  display: none;
+}
+@keyframes slidein {
+  0% { left: -55%; transform: rotateY(180deg); }
+  49.99% { transform: rotateY(180deg) }
+  50% { left: 90%; transform: rotateY(0deg) }
+  100% { left: -55%; transform: rotateY(0deg);}
+}
