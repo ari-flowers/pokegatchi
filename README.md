@@ -1,5 +1,5 @@
 # Tamagotchi
-
+![gif of the Pokegatchi homescreen, a pokemon moving back and forth across the screen](./pokegatchi-gif.gif)
 Project 0 for the GA SEI class
 
 Git Link for project requirements: https://git.generalassemb.ly/wc-seir-726/project-zero
